@@ -5,6 +5,17 @@
     min-height: 100vh;
     font-family: "Trebuchet MS", Verdana, sans-serif;
   	font-size: 25px;
-    background: #a5b8d9;
+    background: #9c56ec;
   	color: #fff;
+}
+
+.clock{
+    width: 500;
+    height: 200;
+    background-color: #420885;
+    border: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
