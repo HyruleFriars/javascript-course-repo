@@ -5,7 +5,7 @@ body{
     min-height: 100vh;
     font-family: "Trebuchet MS", Verdana, sans-serif;
   	font-size: 25px;
-    background: #a5b8d9;
+    background: #c78ef5;
   	color: #fff;
 }
 .clock{
@@ -13,8 +13,8 @@ body{
   height: 200px;
   font-size: 90px;
   color: aliceblue;
-  background: #102;
-  border: 20px solid black;
+  background: rgb(132, 34, 230);
+  border: 20px solid rgb(238, 217, 217);
   display: flex;
   align-items: center;
 
