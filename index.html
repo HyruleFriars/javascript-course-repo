@@ -10,12 +10,12 @@
 <body>
     Select Timezone: <br>
     <form action="timezone">
-        <input type="radio" name="tz" value="NST"> Newfoundland Standard Time <br>
-        <input type="radio" name="tz" value="AST"> Atlantic Standard Time <br>
-        <input type="radio" name="tz" value="EST"> Eastern Standard Time <br>
-        <input type="radio" name="tz" value="CST"> Central Standard Time <br>
-        <input type="radio" name="tz" value="MST"> Mountain Standard Time <br>
-        <input type="radio" name="tz" value="PST"> Pacific Standard Time <br>
+        <div class="timezone"><input type="radio" name="tz" value="NST"> Newfoundland Standard Time <br></div>
+        <div class="timezone"><input type="radio" name="tz" value="AST"> Atlantic Standard Time <br></div>
+        <div class="timezone"><input type="radio" name="tz" value="EST"> Eastern Standard Time <br></div>
+        <div class="timezone"><input type="radio" name="tz" value="CST"> Central Standard Time <br></div>
+        <div class="timezone"><input type="radio" name="tz" value="MST"> Mountain Standard Time <br></div>
+        <div class="timezone"><input type="radio" name="tz" value="PST"> Pacific Standard Time <br></div>
         <button type="button" value="submit" onclick="readForm()"> Submit </button>
     </form>
     <br> <div id="clock" class="clock"></div>
