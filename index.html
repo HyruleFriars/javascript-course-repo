@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning To JavaScript and HTML</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     Select Timezone: <br>
@@ -18,63 +19,5 @@
         <div class="timezone"><input type="radio" name="tz" value="PST"> Pacific Standard Time <br></div>
         <button type="button" value="submit" onclick="readForm()"> Submit </button>
     </form>
-    <br> <div id="clock" class="clock"></div>
-    <script type="text/javascript">
-        var offset = 0;
-        var userInput = ""
-
-        function readForm(){
-            var radioButtons = document.getElementsByName("tz");
-            
-            for (var i = 0; i < radioButtons.length; i++) {
-                if (radioButtons[i].checked == true) {
-                    userInput = " - " + radioButtons[i].value;
-                }
-            }
-            switch (userInput) {
-                case " - NST":
-                    offset = 4;
-                    break;
-                case " - AST":
-                    offset = 3;
-                    break;
-                case " - EST":
-                    offset = 2;
-                    break;
-                case " - CST":
-                    offset = 1;
-                    break;
-                case " - PST":
-                    offset = -1;
-                    break;
-                default:
-                    offset = 0;
-                    break;
-            }
-        }
-        
-        function localTime() {
-            var day = new Date();
-            var hour = day.getHours() + offset;
-            var min = day.getMinutes();
-            var sec = day.getSeconds();
-            var session = " AM";
-
-            if(hour >=24){
-                hour = hour-24;
-            }
-            if(hour >= 12){
-                var session = " PM";
-                hour = hour-12;
-            }
-
-            if(hour==0){
-                hour = hour+12;
-            }
-            var time = hour + ":" + min + ":" + sec + session + userInput;
-            document.getElementById("clock").innerHTML = time;
-        }
-        setInterval(localTime, 1000);
-        </script>
 </body>
 </html>

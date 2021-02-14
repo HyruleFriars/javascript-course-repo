@@ -8,21 +8,6 @@ body{
     background: #c78ef5;
   	color: #fff;
 }
-.clock{
-    width: 500px;
-  height: 200px;
-  font-size: 90px;
-  color: aliceblue;
-  background: rgb(132, 34, 230);
-  border: 20px solid rgb(238, 217, 217);
-  display: flex;
-  align-items: center;
-
-  justify-content: center;
-      margin-left: 50px;
-
-}
-
 .timezone{
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
