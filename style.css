@@ -12,10 +12,13 @@
     width: 500px;
   height: 200px;
   font-size: 90px;
+  color: aliceblue;
   background: #102;
   border: 20px solid black;
   display: flex;
   align-items: center;
+
   justify-content: center;
       margin-left: 50px;
+
 }
