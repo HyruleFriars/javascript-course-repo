@@ -12,10 +12,11 @@
 .clock{
     width: 500;
     height: 200;
-    background-color: #420885;
-    border: #fff;
+    font-size: 90px;
+    background: #420885;
+    border: 20px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
